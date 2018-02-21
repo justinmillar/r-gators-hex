@@ -1,12 +1,14 @@
 library(hexSticker)
 
-imgurl <- "http://logonoid.com/images/thumbs/uf-logo.png"
-sticker(imgurl, package="hexSticker", p_size=8, s_x=1, s_y=.75, s_width=.6)
+#F37022 - Orange
+#015496 - Blue
 
+# Seal link: https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/University_of_Florida_seal.svg/1200px-University_of_Florida_seal.svg.png
+# UF link: https://upload.wikimedia.org/wikipedia/commons/c/c8/UF_Vertical_Signature.png
+# Gator link: https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Florida_Gators_logo.svg/1200px-Florida_Gators_logo.svg.png
 
-library(ggplot2)
+imgurl <- "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Florida_Gators_logo.svg/1200px-Florida_Gators_logo.svg.png"
+sticker(imgurl, package="r-gators", 
+        p_size=24, s_x = 1, s_y = 0.65, s_width = 0.6, s_height = 0.6,
+        h_fill = "#F37022", p_color  = "#015496", h_color = "#015496")
 
-p <- ggplot(aes(x = mpg, y = wt), data = mtcars) + geom_point()
-p <- p + theme_void() + theme_transparent()
-
-sticker(p, package="r-gators", p_size=8, s_x=1, s_y=.75, s_width=1.3, s_height=1)
